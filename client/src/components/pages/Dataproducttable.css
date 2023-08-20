@@ -1,0 +1,6 @@
+.table-cell {
+    word-wrap: break-word;
+    width: 200px; /* ตั้งค่าความกว้างให้เหมาะสม */
+    max-height: 10px; /* จำกัดความสูงไม่ให้เกิน 40px */
+    overflow: hidden; /* ซ่อนสิ่งที่เกินขอบเขต */
+  }

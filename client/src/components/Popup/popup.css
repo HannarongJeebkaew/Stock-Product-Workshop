@@ -1,0 +1,112 @@
+/* สไตล์สำหรับการซ่อน popup แบบเริ่มต้น */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังมืดเมื่อ popup ถูกแสดง */
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  /* สไตล์สำหรับการแสดง popup */
+  .popup.show {
+    display: flex;
+  }
+  
+  /* สไตล์สำหรับส่วนของเนื้อหาภายใน popup */
+  .popup-content {
+    pointer-events: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    z-index: 3;
+  }
+  .popup-content Select{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  box-sizing: border-box;
+    width: 100%;
+
+  }
+  
+  /* สไตล์สำหรับปุ่ม */
+  .popup-content button {
+    margin-top: 20px;
+  }
+  
+  /* สไตล์สำหรับป้ายกำกับ (label) และฟิลด์ป้อนข้อมูล (input) */
+  .popup-content label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+  color: #555;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  }
+  .popup select {
+    margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.popup input:hover {
+  border-color: #0070f3;
+}
+
+.popup input:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.3);
+}
+.popup select:hover {
+  border-color: #0070f3;
+}
+
+.popup select:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.3);
+}
+.popup select option {
+  
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.popup select option:hover {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.popup select option:checked {
+  background-color: #0070f3;
+  color: #fff;
+}
